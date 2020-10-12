@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
     <title>Test</title>
 </head>
 
@@ -22,7 +23,9 @@
     <h1 class="px-2">Search:</h1>
     <form class="form-inline d-flex justify-content-left md-form form-sm mt-0 ml-2">
         <input id="searchedCity" class="searchedCity form-control form-control-md ml-3 w-40" type="text"
-            placeholder="Search" aria-label="Search">
+            placeholder="City" aria-label="Search">
+        <input id="searchedState" class="searchedCity form-control form-control-md ml-3 w-40" type="text"
+            placeholder="state initials" aria-label="Search">
         <button id='search-button' class="btn btn-primary"><i class="fas fa-search" aria-hidden="true"></i></button>
     </form>
 
@@ -33,9 +36,14 @@
             <h5 class="card-title">
                 <p id="cityName">Test</p>
             </h5>
+            <p class="card-text">Latitude:
+            <p id="latitude"></p>
+            </p>
+            <p class="card-text">Longitude:
+            <p id="longitude"></p>
+            </p>
             <p class="card-text">Choices:
             <p id="foodChoices"></p>
-            </p>
             </p>
         </div>
     </div>
