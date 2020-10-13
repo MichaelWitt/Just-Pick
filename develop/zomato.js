@@ -1,18 +1,18 @@
 $(document).ready(function () {
 
-    //  call readLocalStorage() 
 
 
     // restaurants search zomato
 
     var APIkey = '8257b1f1fe7522e48fc3a652d3096b9c';
-    //
+
+
     $('#search-button').click(async function (e) {
         e.preventDefault()
         let currentCityId
         var cityEntered = $('#searchedCity').val();
         var stateSelected = $('#searchedState').val().toUpperCase();
-        //console.log('stateSelected:', stateSelected)
+
 
         var queryURL = 'https://developers.zomato.com/api/v2.1/cities?q=' + cityEntered + '&appid=' + APIkey;
 
@@ -28,8 +28,7 @@ $(document).ready(function () {
             var citySuggs = response.location_suggestions
 
 
-
-            //find object where state code equals state selected
+            //finds object where state code equals state selected
             var selectedCity = citySuggs.find(x => x.state_code === stateSelected)
             console.log('selectedCity:', selectedCity)
 
@@ -39,11 +38,6 @@ $(document).ready(function () {
 
             currentCityId = selectedCity.id
 
-
-
-
-            // $('#foodChoices').text(response.location_suggestions[0].id)
-            // console.log('response:', response)
 
         })
         console.log(currentCityId)
@@ -69,10 +63,10 @@ $(document).ready(function () {
                 $('#adressId').text('City: ' + response.restaurants[i].restaurant.location.address)
                 $('#phoneId').text('Phone #: ' + response.restaurants[i].restaurant.phone_numbers)
                 $('#hoursId').text('Hours: ' + response.restaurants[i].restaurant.timings)
-                $('#urlId').text('URL: ' + response.restaurants[i].restaurant.url)
+                $('#urlId').text('Zomato URL: ' + response.restaurants[i].restaurant.url)
                 $('#foodtypeId').text('Food Type: ' + response.restaurants[i].restaurant.cuisines)
                 $('#ratingId').text('Rating: ' + response.restaurants[i].restaurant.user_rating.aggregate_rating)
-                $('#photosId').text(response.restaurants[i].restaurant.photos_url)
+                // $('#photosId').attr('src', response.restaurants[i].restaurant.photos_url)
 
             }
 
