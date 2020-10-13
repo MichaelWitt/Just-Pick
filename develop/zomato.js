@@ -3,11 +3,6 @@ $(document).ready(function () {
     //  call readLocalStorage() 
 
 
-
-
-
-
-
     // restaurants search zomato
 
     var APIkey = '8257b1f1fe7522e48fc3a652d3096b9c';
@@ -26,7 +21,8 @@ $(document).ready(function () {
             method: 'GET',
             headers: {
                 "user-key": "8257b1f1fe7522e48fc3a652d3096b9c",
-                "content-type": "application/json"
+                "content-type": "application/json",
+
             }
         }).then(function (response) {
             var citySuggs = response.location_suggestions
@@ -52,10 +48,35 @@ $(document).ready(function () {
             method: 'GET',
             headers: {
                 "user-key": "8257b1f1fe7522e48fc3a652d3096b9c",
-                "content-type": "application/json"
+                "content-type": "application/json",
+
             }
         }).then(function (response) {
             console.log(response)
+
+            // for (var i = 0; i < Math.floor(Math.random() * 20); i++) {
+            //     count++;
+
+            $('#restaurantId').text('Restaurant: ' + response.restaurants[0].restaurant.name)
+            $('#adressId').text('City: ' + response.restaurants[0].restaurant.location.address)
+            $('#phoneId').text('Phone #: ' + response.restaurants[0].restaurant.phone_numbers)
+            $('#hoursId').text('Hours: ' + response.restaurants[0].restaurant.timings)
+            $('#urlId').text('URL: ' + response.restaurants[0].restaurant.url)
+            $('#foodtypeId').text('Food Type: ' + response.restaurants[0].restaurant.cuisines)
+            $('#ratingId').text('Rating: ' + response.restaurants[0].restaurant.user_rating.aggregate_rating)
+            $('#photosId').text(response.restaurants[0].restaurant.photos_url)
+
+
+
+            // $('#weatherIcons').attr('src', 'https://openweathermap.org/img/w/' + response.weather[0].icon + '.png')
+
+
+
+
+
+
+
+
         })
     });
 
