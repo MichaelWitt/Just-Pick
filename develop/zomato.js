@@ -26,12 +26,20 @@ $(document).ready(function () {
             }
         }).then(function (response) {
             var citySuggs = response.location_suggestions
-            //console.log('response:', response.location_suggestions)
+
+
 
             //find object where state code equals state selected
             var selectedCity = citySuggs.find(x => x.state_code === stateSelected)
+            console.log('selectedCity:', selectedCity)
+
+            if (selectedCity === undefined) {
+                alert('Please try a different city or two-letter state! The one you entered is not yet in our database.')
+            }
+
             currentCityId = selectedCity.id
-            //console.log('selectedCity:', selectedCity)
+
+
 
 
             // $('#foodChoices').text(response.location_suggestions[0].id)
@@ -54,19 +62,19 @@ $(document).ready(function () {
         }).then(function (response) {
             console.log(response)
 
-            // for (var i = 0; i < Math.floor(Math.random() * 20); i++) {
-            //     count++;
-
-            $('#restaurantId').text('Restaurant: ' + response.restaurants[0].restaurant.name)
-            $('#adressId').text('City: ' + response.restaurants[0].restaurant.location.address)
-            $('#phoneId').text('Phone #: ' + response.restaurants[0].restaurant.phone_numbers)
-            $('#hoursId').text('Hours: ' + response.restaurants[0].restaurant.timings)
-            $('#urlId').text('URL: ' + response.restaurants[0].restaurant.url)
-            $('#foodtypeId').text('Food Type: ' + response.restaurants[0].restaurant.cuisines)
-            $('#ratingId').text('Rating: ' + response.restaurants[0].restaurant.user_rating.aggregate_rating)
-            $('#photosId').text(response.restaurants[0].restaurant.photos_url)
+            for (var i = 0; i < Math.floor(Math.random() * 20); i++) {
 
 
+                $('#restaurantId').text('Restaurant: ' + response.restaurants[i].restaurant.name)
+                $('#adressId').text('City: ' + response.restaurants[i].restaurant.location.address)
+                $('#phoneId').text('Phone #: ' + response.restaurants[i].restaurant.phone_numbers)
+                $('#hoursId').text('Hours: ' + response.restaurants[i].restaurant.timings)
+                $('#urlId').text('URL: ' + response.restaurants[i].restaurant.url)
+                $('#foodtypeId').text('Food Type: ' + response.restaurants[i].restaurant.cuisines)
+                $('#ratingId').text('Rating: ' + response.restaurants[i].restaurant.user_rating.aggregate_rating)
+                $('#photosId').text(response.restaurants[i].restaurant.photos_url)
+
+            }
 
             // $('#weatherIcons').attr('src', 'https://openweathermap.org/img/w/' + response.weather[0].icon + '.png')
 
