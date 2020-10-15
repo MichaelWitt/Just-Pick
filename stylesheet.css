@@ -1,30 +1,56 @@
-html {
-    height: 100%;
-  }
-  body {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: 1fr auto;
-  }
-
   .footer {
-    grid-row-start: 2;
-    grid-row-end: 3;
+      width: 100%;
+      position: absolute; 
+      bottom: 0;
+      text-align: center;
+      color: white;
+      background-color: #fc2976;
+  }
+  #footerImg {
+    width: 100%;
+    position: absolute; 
+    bottom: 0;
+    z-index: 1;
   }
 
-  #footerimg {
-      max-width: 100%;
-  }
- 
   nav {
     width: 100%;
     background-color: white;
+    position: absolute;
+    z-index: 2;
+  }
+  input {
+    color: #fc2976;
   }
 
-  #indexNav {
-    height: 90px;
-  }
-
+    /* label color */
+    .input-field label {
+      color: #fc2976;
+    }
+    /* label focus color */
+    .input-field input[type=text]:focus + label {
+      color: #fc2976;
+    }
+    /* label underline focus color */
+    .input-field input[type=text]:focus {
+      border-bottom: 1px solid #fc2976 !important;
+      box-shadow: 0 1px 0 0 #fc2976;
+    }
+    /* valid color */
+    .input-field input[type=text].valid {
+      border-bottom: 1px solid #fc2976 !important;
+      box-shadow: 0 1px 0 0 #8f657400, 100, 100;
+    }
+    /* invalid color */
+    .input-field input[type=text].invalid {
+      border-bottom: 1px solid #fc2976;
+      box-shadow: 0 1px 0 0 #fc2976;
+    }
+    /* icon prefix focus color */
+    .input-field .prefix.active {
+      color: #fc2976
+    }
+  
   #logotext {
     color: #fc2976;
     font-size: 70px;
@@ -43,5 +69,63 @@ html {
   .container {
     border: gray;
     box-shadow: gray;
+    color: white;
+    max-width: 70%;
+    position: absolute; top: 200px;left: 40px;right: 40px;bottom: 100px;
+    z-index: 3;
   }
 
+  .card-panel {
+    border-radius: 10px;
+  }
+
+  #justPickBtn {
+    background-color: #fc2976;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgb(153, 153, 153);
+    padding: 5px;
+    
+  }
+
+  #justPickBtn:hover {
+    background-color: #fcacac;
+  }
+
+  /* .card-panel {
+    width: 50%;
+    height: 60%;
+  } */
+
+
+  @media only screen and (min-width: 757px) {
+    #indexNav {
+      height: 90px;
+    }
+  }
+
+  @media only screen and (max-width: 756px) {
+   #logotext{
+     font-size: 40px; 
+   }
+   #plateicon {
+     max-height: 30px;
+   }
+  }
+  @media only screen and (max-width: 491px) {
+    #logotext{
+      font-size: 30px;
+    }
+    #plateicon {
+      max-height: 23px;
+    }
+   }
+   @media only screen and (max-width: 402px) {
+    #logotext{
+      font-size: 25px;
+    }
+    #plateicon {
+      max-height: 18px;
+    }
+   }
