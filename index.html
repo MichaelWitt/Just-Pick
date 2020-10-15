@@ -4,29 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just Pick</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-   <header><img src="imgs/justpick.png" alt="Just Pick"></header>
+    <nav id="indexNav">
+        <div class="nav-wrapper">
+            <a id="logotext" href="#" class="brand-logo center"> JUST<img id="plateicon" src="imgs/plateicon.png" alt="plate icon">PICK </a>
+        </div>
+    </nav>
     <br>
     <div class = "container">
         <div class = "row">
             <div class = "col">
-                <button id = "myLocation">MY LOCATION</button>
+                <input type="text" placeholder="City">
             </div>
         </div>
         <div class = "row">
             <div class = "col">
-                <button id = "zipCode">ZIP CODE</button>
-            </div>
-        </div>
-        <div class = "row">
-            <div class = "col">
-                <button id = "category">CATEGORY</button>
-            </div>
-        </div>
-        <div class = "row">
-            <div class = "col">
-                <button id = "youtTellMe">YOU TELL ME</button>
+                <input type="text" placeholder="State Initails">
             </div>
         </div>
         <div class = "row">
@@ -36,7 +32,7 @@
         </div>
     </div>
 
-    <footer><img src="imgs/cafe.png" alt="Cafe Img"></footer>
+    <footer><img id ="footerimg" src="imgs/cafe.png" alt="Cafe Img"></footer>
 
 </body>
 </html>
