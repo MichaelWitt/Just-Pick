@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+
+    <title>Test</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <span class="topHeader navbar-brand mb-0 h1">Test</span>
+    </nav>
+
+    <br />
+
+    <h1 class="px-2">Search:</h1>
+    <form class="form-inline d-flex justify-content-left md-form form-sm mt-0 ml-2">
+        <input id="searchedCity" class="searchedCity form-control form-control-md ml-3 w-40" type="text"
+            placeholder="City" aria-label="Search">
+        <input id="searchedState" class="searchedCity form-control form-control-md ml-3 w-40" type="text"
+            placeholder="State Initials" aria-label="Search">
+        <button id='search-button' class="btn btn-primary"><i class="fas fa-search" aria-hidden="true"></i></button>
+    </form>
+
+    <br />
+
+    <div class="card ml-3" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">
+                <p id="testingId">Random Restaurant</p>
+            </h5>
+            <p class="card-text" id="restaurantId">
+            </p>
+            <p class="card-text" id="foodtypeId">
+            </p>
+            <p class="card-text" id="ratingId">
+            </p>
+            <p class="card-text" id="costId">
+            </p>
+            <p class="card-text" id="hoursId">
+            </p>
+            <p class="card-text" id="addressId">
+            </p>
+            <p class="card-text" id="phoneId">
+            </p>
+            <p class="card-text" id="urlId">
+            </p>
+            <img class="card-text" id="photosId" src="">
+            </img>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="zomato.js"></script>
+
+</body>
+
+</html>
