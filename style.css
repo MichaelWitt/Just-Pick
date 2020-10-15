@@ -1,0 +1,33 @@
+body {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* This will be the JUST PICK at the top of the app */
+header {
+    color: #fc2976
+}
+
+/* This will most likely be the submit bottom */
+button {
+    background-color: #fc2976;
+    color: white;
+}
+
+button :hover {
+    background-image:linear-gradient(#fcacac, white);
+    
+}
+
+/*The input boxes , not sure what they will actually be called. But giving the border
+a color when hovering */
+
+text-box {
+ border-color:#383838;
+ color: #383838;
+ box-shadow:#777777
+}
+text-box :hover {
+    border-color:#fc2976;
+}
+
