@@ -64,41 +64,30 @@ $(document).ready(function () {
                 $('#phoneId').text('Phone #: ' + response.restaurants[i].restaurant.phone_numbers)
                 $('#hoursId').text('Hours: ' + response.restaurants[i].restaurant.timings)
                 $('#foodtypeId').text('Food Type: ' + response.restaurants[i].restaurant.cuisines)
-                $('#urlId').text('Zomato URL: ' + response.restaurants[i].restaurant.url)
-                $('#ratingId').text('Rating: ' + response.restaurants[i].restaurant.user_rating.aggregate_rating)
-                $('#costId').text('Avg. Cost For Two: ' + response.restaurants[i].restaurant.average_cost_for_two)
-                // $('#photosId').attr('src', response.restaurants[i].restaurant.photos_url)
-
+                $('#urlId').text('Website')
+                $('#urlId').attr('href', response.restaurants[i].restaurant.url)
+                $('#ratingId').text('Rating: ' + response.restaurants[i].restaurant.user_rating.aggregate_rating + '/5')
+                $('#costId').text('Avg. Cost For Two: $' + response.restaurants[i].restaurant.average_cost_for_two)
             }
+        })
 
+
+        // random food picture is generated
+        var recipeQueryURL = 'https://foodish-api.herokuapp.com/api'
+
+        await $.ajax({
+            url: recipeQueryURL,
+            method: 'GET',
+
+
+        }).then(function (response) {
+            console.log('response:', response)
+
+            $('#photosId').attr('src', response.image)
+            console.log('response:', response)
 
         })
+
+
     });
-
-
-
-
-    // $('#search-button').click(function (e) {
-    //     e.preventDefault()
-
-
-    //     var recipeQueryURL = 'https://foodish-api.herokuapp.com/';
-
-    //     $.ajax({
-    //         url: recipeQueryURL,
-    //         method: 'GET',
-
-
-
-    //     }).then(function (response) {
-    //         console.log('response:', response)
-
-    //         $('#photosId').attr('src', response)
-
-    //     })
-    // });
-
-
-
-
 });
