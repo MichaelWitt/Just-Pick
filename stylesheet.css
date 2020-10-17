@@ -152,13 +152,12 @@
     }
    }
 
-<<<<<<< HEAD
    h1 {
     color:#fc2976;
     margin-top:-90px;
     font-size:medium;
     text-align:center;
-=======
+    
   /* .card-panel {
     width: 50%;
     height: 60%;
@@ -194,5 +193,4 @@
     #plateicon {
       max-height: 18px;
     }
->>>>>>> d369ddb1b255a7ea2ede6a04f17e0a9f59390ee1
    }
