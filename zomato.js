@@ -3,11 +3,10 @@ $(document).ready(function () {
 
 
     // restaurant search zomato api
-
     var APIkey = '8257b1f1fe7522e48fc3a652d3096b9c';
 
     // onclick that takes city and state and runs them through api
-    $('#search-button').click(async function (e) {
+    $('#search-button ').click(async function (e) {
         e.preventDefault()
         let currentCityId
         var cityEntered = $('#searchedCity').val();
@@ -26,7 +25,7 @@ $(document).ready(function () {
             }
         }).then(function (response) {
             var citySuggs = response.location_suggestions
-
+            console.log(response);
 
             // finds object where state code equals selected state
             var selectedCity = citySuggs.find(x => x.state_code === stateSelected)
