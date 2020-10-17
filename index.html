@@ -8,31 +8,50 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+<!--Modal-->
+
+
+
     <nav id="indexNav">
         <div class="nav-wrapper">
             <a id="logotext" href="#" class="brand-logo center"> JUST<img id="plateicon" src="imgs/plateicon.png" alt="plate icon">PICK </a>
         </div>
     </nav>
-    <br>
-    <div class = "container">
-        <div class = "row">
-            <div class = "col">
-                <input type="text" placeholder="City">
+    
+<div class="container">
+    <h1>If you can't pick a restaurant... let us! </h1>
+</div>
+<br>
+        <div class="container">
+          <div class="card-panel white">
+            <div class = "row">
+                <br>
+                <div class="input-field col s12">
+                    <input placeholder="CITY" id="city" type="text" class="validate">
+                </div>
             </div>
-        </div>
-        <div class = "row">
-            <div class = "col">
-                <input type="text" placeholder="State Initails">
+            <br>
+            <div class = "row">
+                <div class="input-field col s12">
+                    <input placeholder="STATE INITIALS" id="stateInitials" type="text" class="validate">
+                </div>
             </div>
-        </div>
-        <div class = "row">
-            <div class = "col">
-                <button id = "justPickBtn">JUST PICK</button>
+            <br>
+            <div class = "row">
+                <div class="col-5"></div>
+                <div class = "col-2">
+                    <center><button id = "justPickBtn" style="margin: auto;">JUST PICK</button></center>
+                </div>
+                <div class="col-5"></div>
             </div>
+            
+            <br>
+          </div>
         </div>
-    </div>
+        
 
-    <footer><img id ="footerimg" src="imgs/cafe.png" alt="Cafe Img"></footer>
+<div><img  id="footerImg" src="imgs/cafe.png" alt="Cafe Img"></div>
+<footer class="footer">Powered by Zomato</footer>
 
 </body>
 </html>
