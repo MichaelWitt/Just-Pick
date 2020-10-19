@@ -94,7 +94,6 @@
 
   #justPickBtn:hover {
     background-color: #fcacac;
-<<<<<<< HEAD
   }
   @media only screen and (max-width: 491px) {
     #logotext{
@@ -132,8 +131,6 @@
    #plateicon {
      max-height: 30px;
    }
-=======
->>>>>>> d369ddb1b255a7ea2ede6a04f17e0a9f59390ee1
   }
   @media only screen and (max-width: 491px) {
     #logotext{
@@ -157,10 +154,7 @@
     margin-top:-90px;
     font-size:medium;
     text-align:center;
-<<<<<<< HEAD
-=======
     
->>>>>>> main
   /* .card-panel {
     width: 50%;
     height: 60%;
