@@ -8,7 +8,7 @@
   }
   #footerImg {
     width: 100%;
-    position: absolute; 
+    position: fixed; 
     bottom: 0;
     z-index: 1;
   }
@@ -72,14 +72,29 @@
     color: white;
     max-width: 70%;
     position: absolute; top: 200px;left: 40px;right: 40px;bottom: 100px;
+    z-index: 4;
+  }
+
+  .container2 {
+    border: gray;
+    box-shadow: gray;
+    color: rgba(255, 255, 255, 0);
+    max-width: 70%;
+    position: absolute; top: 220px;left: 20%;right: 20%;
     z-index: 3;
+    margin: auto;
+  }
+  
+
+  #urlId{
+    color: #fc2976
   }
 
   .card-panel {
     border-radius: 10px;
   }
 
-  #justPickBtn {
+  #search-button {
     background-color: #fc2976;
     color: white;
     border: none;
@@ -89,10 +104,9 @@
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    
-  }
+    }
 
-  #justPickBtn:hover {
+  #search-button:hover {
     background-color: #fcacac;
   }
   @media only screen and (max-width: 491px) {
