@@ -23,7 +23,8 @@ View the website at: https://https://michaelwitt.github.io/Just-Pick/
 
 View the refactory at: https://github.com/MichaelWitt/Just-Pick
 
-Website Preview: ![alt text](https://https://michaelwitt.github.io/Just-Pick/imgs/Just-Pick-Website.png)
+Website Preview: ![alt text](https://michaelwitt.github.io/Just-Pick/imgs/Just-Pick-Website.png)
+Restaurant Demo: ![alt text](https://michaelwitt.github.io/Just-Pick/imgs/Just-Pick-Demo.png)
 
 ## Updates
 
