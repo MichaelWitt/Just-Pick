@@ -19,11 +19,19 @@ background-color: white;
 position: absolute;
 z-index: 2;
 }
+
+h1 {
+  color:#fc2976;
+  margin-top:-90px;
+  font-size:medium;
+  text-align:center;
+  }
+
 input {
 color: #fc2976;
 }
 
-/* label color */
+/* label color from materialize*/
 .input-field label {
   color: #fc2976;
 }
@@ -85,7 +93,6 @@ z-index: 3;
 margin: auto;
 }
 
-
 #urlId{
 color: #fc2976
 }
@@ -109,99 +116,35 @@ padding-bottom: 10px;
 #search-button:hover {
 background-color: #fcacac;
 }
-@media only screen and (max-width: 491px) {
-#logotext{
-  font-size: 30px;
-}
-#plateicon {
-  max-height: 23px;
-}
-}
-@media only screen and (max-width: 402px) {
-#logotext{
-  font-size: 25px;
-}
-#plateicon {
-  max-height: 18px;
-}
-}
-
-/* .card-panel {
-width: 50%;
-height: 60%;
-} */
-
 
 @media only screen and (min-width: 757px) {
-#indexNav {
-  height: 90px;
-}
-}
+  #indexNav {
+    height: 90px;
+  }
+  }
+  
+  @media only screen and (max-width: 756px) {
+  #logotext{
+   font-size: 40px; 
+  }
+  #plateicon {
+   max-height: 30px;
+  }
+  }
 
-@media only screen and (max-width: 756px) {
-#logotext{
- font-size: 40px; 
-}
-#plateicon {
- max-height: 30px;
-}
-}
 @media only screen and (max-width: 491px) {
-#logotext{
-  font-size: 30px;
-}
-#plateicon {
-  max-height: 23px;
-}
-}
+  #logotext{
+    font-size: 30px;
+  }
+  #plateicon {
+    max-height: 23px;
+  }
+  }
 @media only screen and (max-width: 402px) {
-#logotext{
-  font-size: 25px;
-}
-#plateicon {
-  max-height: 18px;
-}
-}
-
-h1 {
-color:#fc2976;
-margin-top:-90px;
-font-size:medium;
-text-align:center;
-}
-/* .card-panel {
-width: 50%;
-height: 60%;
-} */
-
-
-@media only screen and (min-width: 757px) {
-#indexNav {
-  height: 90px;
-}
-}
-
-@media only screen and (max-width: 756px) {
-#logotext{
- font-size: 40px; 
-}
-#plateicon {
- max-height: 30px;
-}
-}
-@media only screen and (max-width: 491px) {
-#logotext{
-  font-size: 30px;
-}
-#plateicon {
-  max-height: 23px;
-}
-}
-@media only screen and (max-width: 402px) {
-#logotext{
-  font-size: 25px;
-}
-#plateicon {
-  max-height: 18px;
-} 
-}
+  #logotext{
+    font-size: 25px;
+  }
+  #plateicon {
+    max-height: 18px;
+  }
+  }
