@@ -19,7 +19,7 @@ The Zomato and Foodish API were used to select a random restaurant with images.
 
 ## Website & Refactory
 
-View the website at: https://https://michaelwitt.github.io/Just-Pick/
+View the website at: https://michaelwitt.github.io/Just-Pick/
 
 View the refactory at: https://github.com/MichaelWitt/Just-Pick
 
