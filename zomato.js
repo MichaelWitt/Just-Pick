@@ -25,7 +25,6 @@ $(document).ready(function () {
             }
         }).then(function (response) {
             var citySuggs = response.location_suggestions
-            console.log(response);
 
             // finds object where state code equals selected state
             var selectedCity = citySuggs.find(x => x.state_code === stateSelected)
@@ -36,7 +35,6 @@ $(document).ready(function () {
             }
             // city id has been located and stored in a variable
             currentCityId = selectedCity.id
-
 
         })
 
@@ -80,10 +78,8 @@ $(document).ready(function () {
 
 
         }).then(function (response) {
-            console.log('response:', response)
 
             $('#photosId').attr('src', response.image)
-            console.log('response:', response)
 
         })
 
